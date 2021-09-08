@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+'use strict';
+/*
+1. К 10 прибавляем 10 затем конкатенируем с 10, получается строка 2010
+2. 10 конкатенируем с 10 и ещё раз конкатенируем с 10, получается строка 101010
+3. 10 прибавляем 10 и ещё раз прибавляем 10. (+"10" преобразование в число)
+4. Деление на 0 = бесконечность
+5. 10 делим на строку = ошибка "Не число"
+*/
+let result1 = 10 + 10 + "10";
+let result2 = 10 + "10" + 10;
+let result3 = 10 + 10 + +"10";
+let result4 = 10 / -"";
+let result5 = 10 / +"2,5";
+
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);
+console.log(result5);
+
+</script>
+</body>
+
+</html>
