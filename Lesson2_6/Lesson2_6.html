@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+'use strict';
+
+let money = prompt("Введите сумму");
+//преобразуем число в строку.
+let str = String(money);
+//Узнаём длину строки.
+let strLength = str.length;
+//Узнаём последний символ строки.
+let lastChar = str.charAt(strLength - 1);
+
+//Выводим сообщение пользователю в правильном падеже.
+switch(lastChar){
+  case "1":
+    alert(`Ваша сумма в ${money} рубль успешно зачислена.`);
+    break;
+  case "2":
+  case "3":
+  case "4":
+    alert(`Ваша сумма в ${money} рубля успешно зачислена.`);
+    break;
+  case "0":
+  case "5":
+  case "6":
+  case "7":
+  case "8":
+  case "9":
+    alert(`Ваша сумма в ${money} рублей успешно зачислена.`);
+    break;
+  default:
+    alert("Неверное значение");
+}
+
+
+
+
+</script>
+</body>
+
+</html>

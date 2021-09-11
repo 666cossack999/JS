@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+'use strict';
+let firstNumber = +prompt("Введите первое число");
+let secondNumber = +prompt("Введите второе число");
+
+document.write(`Сумма чисел равна: ${sum(firstNumber,secondNumber)} <br/>`);
+document.write(`Разность чисел равна: ${difference(firstNumber,secondNumber)}<br/>`);
+document.write(`Произведение чисел равно: ${multiply(firstNumber,secondNumber)}<br/>`);
+document.write(`Частное от чисел равно: ${div(firstNumber,secondNumber)}<br/>`);
+
+//Считает сумму 2х чисел.
+function sum(x, y){
+   let result = x + y;
+   return result;
+}
+
+//Считает разность 2х чисел.
+function difference(x, y){
+   let result = x - y;
+   return result;
+}
+
+//Считает произведение 2х чисел.
+function multiply(x, y){
+   let result = x * y;
+   return result;
+}
+
+//Считает частное 2х чисел.
+function div(x, y){
+   let result = x / y;
+   return result;
+}
+
+</script>
+</body>
+
+</html>
