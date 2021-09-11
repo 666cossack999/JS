@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+'use strict';
+
+let firstNumber = +prompt("Введите первое число");
+let operation = prompt("Введите математическую операцию");
+let secondNumber = +prompt("Введите второе число");
+
+alert(mathOperation(firstNumber, operation, secondNumber));
+
+//Принимает 2 числа и математическую
+ function mathOperation(arg1, operation, arg2 ){
+ 	let result;
+ 	switch(operation){
+ 		case "+":
+ 			result = `Сумма от чисел равна: ${sum(arg1,arg2)}`;
+ 			break;
+ 		case "-":
+ 			result = `Разность от чисел равна: ${difference(arg1,arg2)}`;
+ 			break;
+ 		case "*":
+ 			result = `Произведение от чисел равно: ${multiply(arg1,arg2)}`;
+ 			break;
+ 		case "/":
+ 			result = `Частное от чисел равно: ${div(arg1,arg2)}`;
+ 			break;
+ 		default:
+ 			alert("Введено неверное значение!");
+ 	}
+ 	return result;
+ }
+
+//Считает сумму 2х чисел.
+function sum(x, y){
+   let result = x + y;
+   return result;
+}
+
+//Считает разность 2х чисел.
+function difference(x, y){
+   let result = x - y;
+   return result;
+}
+
+//Считает произведение 2х чисел.
+function multiply(x, y){
+   let result = x * y;
+   return result;
+}
+
+//Считает частное 2х чисел.
+function div(x, y){
+   let result = x / y;
+   return result;
+}
+
+</script>
+</body>
+
+</html>
